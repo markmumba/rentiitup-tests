@@ -9,7 +9,7 @@ Feature: Browse and Select Equipment by Category
 
   Scenario: Navigate to equipment selection through category hierarchy
     When I click the "Schedule" button in the navigation
-    Then I should be redirected to the "Choose by Category" page
+    Then I should be redirected to the categories page
     And I should see a list of equipment categories
     
     When I expand the "Material Handling Equipment" accordion

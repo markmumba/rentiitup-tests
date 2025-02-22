@@ -19,7 +19,7 @@ When('I click on the {string} button', (buttonText) => {
     I.click(buttonText);
 });
 
-Then('I should be redirected to the {string} page', (page) => {
+Then('I should be redirected to the add machine page', () => {
     I.seeInCurrentUrl('http://localhost:3000/machines/add');
 });
 

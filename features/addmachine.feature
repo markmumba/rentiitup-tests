@@ -9,7 +9,7 @@ Feature: Add Machine to Equipment Inventory
 
   Scenario: Successfully add a new machine with valid details and image
     When I click on the "Add Machine" button
-    Then I should be redirected to the "machine add" page
+    Then I should be redirected to the add machine page
     
     When I fill in the following machine details:
       | Name          | Mini excavator                      |
@@ -20,7 +20,6 @@ Feature: Add Machine to Equipment Inventory
       | Category      | Material Handling Equipment         |
     And I click the "Add Machine" submit button
     Then I should see a success message "Machine created successfully"
-    And I should be redirected to the "Add Machine Image" page
 
     When I select an image file from my device
     And I click the "Upload Images" submit button

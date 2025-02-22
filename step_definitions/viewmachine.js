@@ -22,10 +22,9 @@ When('I click the "Schedule" button in the navigation', () => {
     I.click('Schedule');
 });
 
-Then('I should be redirected to the "Choose by Category" page', () => {
+Then('I should be redirected to the categories page', () => {
     I.seeInCurrentUrl('/categories');
     I.see('Choose by Category');
-    I.wait(2)
 });
 
 Then('I should see a list of equipment categories', () => {
@@ -62,7 +61,6 @@ When('I select "Mini Excavator" from the equipment list', () => {
     // Click the entire card which is more reliable for touch/click events
     I.click('.rounded-xl.bg-card');
     // Wait for navigation or next page load
-    I.wait(2);
 });
 
 Then('I should be redirected to the detailed "Mini Excavator" page', () => {
