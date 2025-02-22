@@ -19,9 +19,11 @@ exports.config = {
     features: './features/*.feature',
     steps: [
       './step_definitions/login.js',
-      './step_definitions/addmachine.js',
+      './step_definitions/viewmachine.js',
+
     ]
   },
+
   plugins: {
     screenshotOnFail: {
       enabled: true
