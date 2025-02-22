@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "codeceptjs": "^3.7.2",
+    "puppeteer": "^24.2.1"
+  }
+}
